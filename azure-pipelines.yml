@@ -1,0 +1,10 @@
+# Node.js
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- script: npm publish
