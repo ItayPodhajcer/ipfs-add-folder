@@ -1,5 +1,3 @@
-# Node.js
-
 trigger:
 - master
 
@@ -7,4 +5,8 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: npm publish
+- task: Npm@1
+  inputs:
+    command: 'publish'
+    workingDir: '/'
+    publishEndpoint: 'npm_cladular'
