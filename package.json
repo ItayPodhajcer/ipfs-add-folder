@@ -1,13 +1,12 @@
 {
     "name": "ipfs-add-folder",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Recursively adds a folder to IPFS.",
     "main": "src/index.js",
     "bin": {
         "ipfs-add-folder": "src/index.js"
     },
     "scripts": {
-        "preinstall": "npm install secp256k1 --ignore-scripts",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -34,5 +33,8 @@
     },
     "publishConfig": {
         "access": "public"
+    },
+    "config": {
+        "ignore-scripts": "true"
     }
 }
