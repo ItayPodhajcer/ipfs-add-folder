@@ -1,6 +1,6 @@
 # IPFS Add Folder
 
-Recursively upload a folder to IPFS.
+Recursively adds a folder to IPFS.
 
 ## Usage
 
