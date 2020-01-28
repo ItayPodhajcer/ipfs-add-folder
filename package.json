@@ -1,6 +1,6 @@
 {
-    "name": "@cladular/ipfs-add-folder",
-    "version": "1.0.1",
+    "name": "ipfs-add-folder",
+    "version": "0.0.1",
     "description": "Recursively adds a folder to IPFS.",
     "main": "src/index.js",
     "bin": {
