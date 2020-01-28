@@ -1,0 +1,1 @@
+require('./ipfs-add-folder')
