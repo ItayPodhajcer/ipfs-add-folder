@@ -95,6 +95,14 @@
                 "file-uri-to-path": "1.0.0"
             }
         },
+        "bip66": {
+            "version": "1.1.5",
+            "resolved": "https://registry.npmjs.org/bip66/-/bip66-1.1.5.tgz",
+            "integrity": "sha1-AfqHSHhcpwlV1QESF9GzE5lpyiI=",
+            "requires": {
+                "safe-buffer": "^5.0.1"
+            }
+        },
         "bl": {
             "version": "4.0.0",
             "resolved": "https://registry.npmjs.org/bl/-/bl-4.0.0.tgz",
@@ -140,6 +148,11 @@
                 "balanced-match": "^1.0.0",
                 "concat-map": "0.0.1"
             }
+        },
+        "brorand": {
+            "version": "1.1.0",
+            "resolved": "https://registry.npmjs.org/brorand/-/brorand-1.1.0.tgz",
+            "integrity": "sha1-EsJe/kCkXjwyPrhnWgoM5XsiNx8="
         },
         "browserify-aes": {
             "version": "1.2.0",
@@ -258,6 +271,19 @@
                 "sha.js": "^2.4.0"
             }
         },
+        "create-hmac": {
+            "version": "1.1.7",
+            "resolved": "https://registry.npmjs.org/create-hmac/-/create-hmac-1.1.7.tgz",
+            "integrity": "sha512-MJG9liiZ+ogc4TzUwuvbER1JRdgvUFSB5+VR/g5h82fGaIRWMWddtKBHi7/sVhfjQZ6SehlyhvQYrcYkaUIpLg==",
+            "requires": {
+                "cipher-base": "^1.0.3",
+                "create-hash": "^1.1.0",
+                "inherits": "^2.0.1",
+                "ripemd160": "^2.0.0",
+                "safe-buffer": "^5.0.1",
+                "sha.js": "^2.4.8"
+            }
+        },
         "debug": {
             "version": "4.1.1",
             "resolved": "https://registry.npmjs.org/debug/-/debug-4.1.1.tgz",
@@ -275,6 +301,30 @@
             "version": "0.1.0",
             "resolved": "https://registry.npmjs.org/delimit-stream/-/delimit-stream-0.1.0.tgz",
             "integrity": "sha1-m4MZR3wOX4rrPONXrjBfwl6hzSs="
+        },
+        "drbg.js": {
+            "version": "1.0.1",
+            "resolved": "https://registry.npmjs.org/drbg.js/-/drbg.js-1.0.1.tgz",
+            "integrity": "sha1-Pja2xCs3BDgjzbwzLVjzHiRFSAs=",
+            "requires": {
+                "browserify-aes": "^1.0.6",
+                "create-hash": "^1.1.2",
+                "create-hmac": "^1.1.4"
+            }
+        },
+        "elliptic": {
+            "version": "6.5.2",
+            "resolved": "https://registry.npmjs.org/elliptic/-/elliptic-6.5.2.tgz",
+            "integrity": "sha512-f4x70okzZbIQl/NSRLkI/+tteV/9WqL98zx+SQ69KbXxmVrmjwsNUPn/gYJJ0sHvEak24cZgHIPegRePAtA/xw==",
+            "requires": {
+                "bn.js": "^4.4.0",
+                "brorand": "^1.0.1",
+                "hash.js": "^1.0.0",
+                "hmac-drbg": "^1.0.0",
+                "inherits": "^2.0.1",
+                "minimalistic-assert": "^1.0.0",
+                "minimalistic-crypto-utils": "^1.0.0"
+            }
         },
         "err-code": {
             "version": "2.0.0",
@@ -354,10 +404,29 @@
                 "safe-buffer": "^5.0.1"
             }
         },
+        "hash.js": {
+            "version": "1.1.7",
+            "resolved": "https://registry.npmjs.org/hash.js/-/hash.js-1.1.7.tgz",
+            "integrity": "sha512-taOaskGt4z4SOANNseOviYDvjEJinIkRgmp7LbKP2YTTmVxWBl87s/uzK9r+44BclBSp2X7K1hqeNfz9JbBeXA==",
+            "requires": {
+                "inherits": "^2.0.3",
+                "minimalistic-assert": "^1.0.1"
+            }
+        },
         "hi-base32": {
             "version": "0.5.0",
             "resolved": "https://registry.npmjs.org/hi-base32/-/hi-base32-0.5.0.tgz",
             "integrity": "sha512-DDRmxSyoYuvjUb9EnXdoiMChBZ7ZcUVJsK5Frd3kqMhuBxvmZdnBeynAVfj7/ECbn++CekcoprvC/rprHPAtow=="
+        },
+        "hmac-drbg": {
+            "version": "1.0.1",
+            "resolved": "https://registry.npmjs.org/hmac-drbg/-/hmac-drbg-1.0.1.tgz",
+            "integrity": "sha1-0nRXAQJabHdabFRXk+1QL8DGSaE=",
+            "requires": {
+                "hash.js": "^1.0.3",
+                "minimalistic-assert": "^1.0.0",
+                "minimalistic-crypto-utils": "^1.0.1"
+            }
         },
         "ieee754": {
             "version": "1.1.13",
@@ -714,7 +783,8 @@
                 "bs58": "^4.0.1",
                 "multihashing-async": "~0.6.0",
                 "nodeify": "^1.0.1",
-                "safe-buffer": "^5.1.2"
+                "safe-buffer": "^5.1.2",
+                "secp256k1": "^4.0.0"
             },
             "dependencies": {
                 "multihashing-async": {
@@ -728,11 +798,6 @@
                         "murmurhash3js": "^3.0.1",
                         "nodeify": "^1.0.1"
                     }
-                },
-                "secp256k1": {
-                    "version": "4.0.0",
-                    "resolved": "https://registry.npmjs.org/secp256k1/-/secp256k1-4.0.0.tgz",
-                    "integrity": "sha512-0w0zse+Iku13O58SVE9/DhyCKWNsKb+n/vMqLOGICgSqxWuXZs+eajBf9uVOgk5QfNvTY/mx0QSqYxkcz802dw=="
                 }
             }
         },
@@ -800,6 +865,11 @@
             "version": "1.0.1",
             "resolved": "https://registry.npmjs.org/minimalistic-assert/-/minimalistic-assert-1.0.1.tgz",
             "integrity": "sha512-UtJcAD4yEaGtjPezWuO9wC4nwUnVH/8/Im3yEHQP4b67cXlD/Qr9hdITCU1xDbSEXg2XKNaP8jsReV7vQd00/A=="
+        },
+        "minimalistic-crypto-utils": {
+            "version": "1.0.1",
+            "resolved": "https://registry.npmjs.org/minimalistic-crypto-utils/-/minimalistic-crypto-utils-1.0.1.tgz",
+            "integrity": "sha1-9sAMHAsIIkblxNmd+4x8CDsrWCo="
         },
         "minimatch": {
             "version": "3.0.4",
@@ -4637,6 +4707,11 @@
             "version": "2.1.2",
             "resolved": "https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz",
             "integrity": "sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg=="
+        },
+        "secp256k1": {
+            "version": "4.0.0",
+            "resolved": "https://registry.npmjs.org/secp256k1/-/secp256k1-4.0.0.tgz",
+            "integrity": "sha512-0w0zse+Iku13O58SVE9/DhyCKWNsKb+n/vMqLOGICgSqxWuXZs+eajBf9uVOgk5QfNvTY/mx0QSqYxkcz802dw=="
         },
         "sha.js": {
             "version": "2.4.11",
