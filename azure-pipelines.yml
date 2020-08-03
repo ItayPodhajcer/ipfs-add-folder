@@ -1,5 +1,12 @@
 trigger:
-- master
+  branches:
+    include:
+      - master
+  paths:
+    exclude:
+      - README.md
+      - LICENSE
+pr: none
 
 pool:
   vmImage: 'ubuntu-latest'
