@@ -1,6 +1,6 @@
 {
     "name": "ipfs-add-folder",
-    "version": "1.0.8",
+    "version": "1.0.9",
     "description": "Recursively adds a folder to IPFS.",
     "main": "src/index.js",
     "bin": {
@@ -26,10 +26,9 @@
     },
     "homepage": "https://github.com/Cladular/ipfs-add-folder#readme",
     "dependencies": {
-        "chalk": "^3.0.0",
-        "commander": "^4.1.1",
-        "ipfs-http-client": "^48.1.0",
-        "npm": "^7.0.9"
+        "chalk": "^4.1.2",
+        "commander": "^8.2.0",
+        "ipfs-http-client": "^52.0.3"
     },
     "publishConfig": {
         "access": "public"

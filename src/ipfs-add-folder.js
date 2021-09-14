@@ -32,12 +32,12 @@ function addFolder(
     quiet
 ) {
     files = getAllFiles(folderPath);
-    ipfs = ipfsClient(nodeUrl);
+    ipfs = ipfsClient.create({ url: nodeUrl });
     rootFolder = `/${path.relative(path.resolve(process.argv[2], ".."), process.argv[2])}`;
 
     ipfs.add(files, (pin ? { pin: true } : {}))
         .then(result => {
-            rootItem = `/ipfs/${result[result.length - 1].hash}`;
+            rootItem = `/ipfs/${result.cid.toString()}`;
             if (!quiet) {
                 console.info(result)
                 console.info('')
@@ -47,7 +47,7 @@ function addFolder(
             ipfs.files.cp(rootItem, rootFolder);
 
             if (quiet) {
-                console.info(result[result.length - 1].hash);
+                console.info(result.cid.toString());
             }
         })
         .catch(error => {
