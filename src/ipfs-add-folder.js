@@ -17,13 +17,17 @@ const program = new commander.Command(packageJson.name)
     })
     .option('-p, --pin', 'pin uploaded folders and files')
     .option('-q, --quiet', 'Will only print the result hash of the root folder once complete')
+
+program
     .parse(process.argv);
+
+const opts = program.opts();
 
 addFolder(
     folderPath,
     nodeUrl,
-    program.pin,
-    program.quiet);
+    opts.pin,
+    opts.quiet);
 
 function addFolder(
     folderPath,
