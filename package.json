@@ -28,7 +28,7 @@
     "dependencies": {
         "chalk": "^4.1.2",
         "commander": "^8.2.0",
-        "ipfs-http-client": "^52.0.3"
+        "ipfs-http-client": "^60.0.1"
     },
     "publishConfig": {
         "access": "public"
