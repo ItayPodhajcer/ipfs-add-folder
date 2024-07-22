@@ -16,4 +16,4 @@ steps:
   inputs:
     command: 'publish'
     workingDir: '$(System.DefaultWorkingDirectory)/'
-    publishEndpoint: 'npm_cladular'
+    publishEndpoint: 'npm_itaypodhajcer'
