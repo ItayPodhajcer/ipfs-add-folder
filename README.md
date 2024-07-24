@@ -1,4 +1,4 @@
-# IPFS Add Folder [![Build Status](https://dev.azure.com/cladular/ipfs-add-folder/_apis/build/status/cladular.ipfs-add-folder?branchName=master)](https://dev.azure.com/cladular/ipfs-add-folder/_build/latest?definitionId=4&branchName=master)
+# IPFS Add Folder [![Build Status](https://github.com/ItayPodhajcer/ipfs-add-folder/actions/workflows/build.yml/badge.svg)](https://github.com/ItayPodhajcer/ipfs-add-folder/actions)
 
 Recursively adds a folder to IPFS.
 
