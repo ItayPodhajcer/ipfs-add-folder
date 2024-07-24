@@ -1,4 +1,4 @@
-# IPFS Add Folder [![Build Status](https://github.com/ItayPodhajcer/ipfs-add-folder/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/ItayPodhajcer/ipfs-add-folder/actions)
+# IPFS Add Folder [![Build Status](https://github.com/ItayPodhajcer/ipfs-add-folder/actions/workflows/publish.workflow.yml/badge.svg?branch=master)](https://github.com/ItayPodhajcer/ipfs-add-folder/actions)
 
 Recursively adds a folder to IPFS.
 
