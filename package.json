@@ -1,6 +1,6 @@
 {
     "name": "ipfs-add-folder",
-    "version": "1.0.24",
+    "version": "1.0.25",
     "description": "Recursively adds a folder to IPFS.",
     "main": "src/index.js",
     "bin": {
